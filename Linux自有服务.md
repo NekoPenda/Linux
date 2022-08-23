@@ -14,6 +14,7 @@
     该进程存在一个对应的配置文件: inittab (系统运行级别配置文件，位置/etc/inittab)
 
 文件的主要内容：
+
 ![图片](images/inittab.png)
 
 ```
@@ -86,6 +87,7 @@ Linux系统是一个多用户多任务的操作系统，任何一个要使用系
 	-c comment：添加注释
 ```
 案例：创建用户zhangsan，不带任何选项
+
 ![图片](images/useradd.png)
 ```
 验证是否成功：
@@ -162,6 +164,7 @@ Linux不允许没有密码的用户登录到系统，因此前面创建的用户
 在设置用户密码之后可以登录帐号
 
 ④切换用户
+
 ![图片](images/su.png)
 
 ```
@@ -197,6 +200,7 @@ userdel：user delete（用户删除）
 ```
 用户组的管理涉及用户组的添加、删除和修改。组的增加、删除和修改实际上就是对/etc/group文件的更新。
 ```
+
 ![图片](images/用户组0.png)
 ```
 文件结构：
@@ -209,6 +213,7 @@ userdel：user delete（用户删除）
 
 ```
 ①用户组添加
+
 ```
 常用语法：#groupadd 选项 用户组名
 常用选项：
@@ -216,6 +221,7 @@ userdel：user delete（用户删除）
 
 ```
 案例：使用groupadd指令创建一个新的用户组，命名为Administrators
+
 ![图片](images/用户组1.png)
 
 ②用户组编辑
@@ -227,8 +233,10 @@ userdel：user delete（用户删除）
 
 ```
 案例：修改Administrators用户组，将组ID从502改成520，将名称改为admins
+
 ![图片](images/用户组2.png)
 ③用户组删除
+
 ```
 常用语法：#groupdel 用户组名
 ```
